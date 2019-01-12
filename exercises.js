@@ -52,7 +52,13 @@ console.log("1. canVote: ", canVote(18));
  * Console.log your result.
 */
 
+function login(password){
+  if(password === 'password'){
+    return 'Login Success!';
+  }
+}
 
+console.log(login('password'));
 /*
  * #3
  * Function - isGreaterThan
