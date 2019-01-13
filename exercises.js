@@ -155,7 +155,7 @@ function notEqual(first,second){
   if(first !== second){
     return 'Opposites do attract';
   }else{
-    return 'Cause it/s like your/re my mirror.';
+    return 'Cause its like youre my mirror.';
   }
 }
 console.log(notEqual('golly','good golly miss molly'));
@@ -259,8 +259,14 @@ console.log(daClub(19,19));
  * Console.log your result.
 */ 
 
-
-
+function graduation(credits,thesis){
+  if(credits >= 120 || thesis === true){
+    return 'SCHOOLS OUT!! Alexa, play The Weekend: Friday'
+  }else{
+    return 'Yeet you thought';
+  }
+}
+console.log(graduation(130, true));
 /*
  * #13
  * Function - moneyTrain
