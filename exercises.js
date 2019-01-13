@@ -263,7 +263,7 @@ function graduation(credits,thesis){
   if(credits >= 120 || thesis === true){
     return 'SCHOOLS OUT!! Alexa, play The Weekend: Friday'
   }else{
-    return 'Yeet you thought';
+    return 'Yeet you thought, SIKE';
   }
 }
 console.log(graduation(130, true));
