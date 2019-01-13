@@ -217,8 +217,14 @@ console.log(dirty30(10,10,20));
 */ 
 
 
-
-
+function evenStevens(num){
+  if(num%2 === 0){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(evenStevens(3));
 /*
  * #11
  * Function - daClub
