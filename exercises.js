@@ -137,7 +137,6 @@ function isEqual(first,second){
     return 'Dang bruh you switched up, press F in chat.';
   }
 }
-
 console.log(isEqual('hell yeah', 'Hell yeah'));
 /*
  * #7
@@ -152,7 +151,14 @@ console.log(isEqual('hell yeah', 'Hell yeah'));
  * Console.log your result.
 */
 
-
+function notEqual(first,second){
+  if(first !== second){
+    return 'Opposites do attract';
+  }else{
+    return 'Cause it/s like your/re my mirror.';
+  }
+}
+console.log(notEqual('golly','good golly miss molly'));
 /*
  * #8
  * Function - spareChange
