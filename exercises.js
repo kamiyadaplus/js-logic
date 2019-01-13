@@ -279,7 +279,16 @@ console.log(graduation(130, true));
  * Console.log your result.
 */ 
 
-
+function moneyTrain(speed){
+  if(speed < 50){
+    return 'You are riding Honolulus Rail';
+  }else if(speed < 100){
+    return 'You are riding an Amtrak';
+  }else{
+    return 'Ballin like an athlete but got no jumper!';
+  }
+}
+console.log(moneyTrain(100));
 /*
  * #14
  * Function - buyDoughnut
