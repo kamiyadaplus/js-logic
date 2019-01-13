@@ -130,7 +130,15 @@ console.log(bigBird('big'));
  * Console.log your result.
 */
 
+function isEqual(first,second){
+  if(first === second){
+    return 'Ayeee! That/s fresh!';
+  }else{
+    return 'Dang bruh you switched up, press F in chat.';
+  }
+}
 
+console.log(isEqual('hell yeah', 'Hell yeah'));
 /*
  * #7
  * Function - notEqual
