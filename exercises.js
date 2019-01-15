@@ -347,6 +347,9 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+for (var i = 1; i<5; i++){
+  console.log('Player: ', i);
+}
 
 /* 
  * #16
@@ -354,6 +357,9 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+for (var i = 0; i<myFavFoods.length; i++){
+  console.log(myFavFoods[i]);
+}
 
 /*
  * #17
@@ -370,8 +376,16 @@ for (var i = 0; i<toyotaModels.length; i++){
  * Console.log your result.
 */
 
+var numArray = [2, 5, 7, 13, 19]
 
-
+function sumItUp(arr){
+  var total = 0;
+  for (var i = 0; i<arr.length; i++){
+    console.log(arr[i]);
+  total += arr[i];
+  }
+  return total;
+}
 /*
  * #18
  * Function - allStars
@@ -385,6 +399,22 @@ for (var i = 0; i<toyotaModels.length; i++){
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var east = [];
+var west = [];
+
+function allStars(ballars){
+  for(var i = 0; i<ballars.length; i++){
+    console.log(ballars[i]);
+    if(i%2 === 0){
+      east.push(ballars[i])
+    }else{
+      west.push(ballars[i])
+    }
+  }
+}
+allStars(players);
+console.log(east);
+console.log(west);
 /*
  * #19
  * Function - subways
@@ -399,7 +429,18 @@ var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Si
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
-
+function subways(special){
+  for(var i = 0; i<subOftheDay.length; i++){
+    if(i%2 == 1){
+      console.log(i);
+      special.splice(i, 1, 'Classic Tuna');
+      special[i] = 'Classic Tuna';
+    }
+  }
+  return special;
+}
+subways(subOftheDay);
+console.log(subOftheDay);
 /*
 Final Boss
  * #20
